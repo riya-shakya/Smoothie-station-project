@@ -1,0 +1,54 @@
+/* ================= CREDITS ==================== 
+
+Photo by <a href="https://unsplash.com/@cravethebenefits?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Brenda Godinez</a> on <a href="https://unsplash.com/s/photos/smoothie?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+*/
+
+#aboutUs{
+    margin-top: 2vh;
+    overflow: auto;
+    padding: 2rem;
+}
+#learnMore:hover{
+    background: var(--contentColor);
+    transform: scale(1.02);
+    transition: var(--transition);
+}
+#aboutImage{
+    max-height: 450px;
+    max-width: 400px;
+    border: 5px solid var(--supportiveColor);
+    overflow: hidden;
+    margin: 0 auto;
+}
+#aboutImage img:hover{
+    transform: scale(1.25);
+    transition: var(--transition);
+}
+#aboutImage img{
+    border: none;
+    border-radius: 0;
+    height: 100%;
+    object-fit: cover;
+}
+
+@media screen and (min-width: 800px ){ 
+    #aboutImage{
+        max-height: 550px;
+        max-width: 600px;
+    }
+    #aboutUsContent{
+        max-width: 70%;
+    }
+}
+
+@media screen and (min-width: 1200px ){
+    #aboutImage{
+        float: left; 
+        width: 50%;
+    }
+    #aboutUsContent{
+        float:left;
+        padding: 1rem;
+        max-width: 50%;
+    }
+}

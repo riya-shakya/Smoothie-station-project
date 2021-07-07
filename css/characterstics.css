@@ -1,0 +1,49 @@
+#charactersticsBox{
+    width: 100%;
+    overflow: auto;
+    background: var(--primaryColor);
+}
+
+.mainCharacterstics{
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+    text-align: center;
+    border: 3px solid var(--primaryColor);
+}
+
+.mainCharacterstics:hover{
+    background: var(--hoverColor);
+    border: 3px solid var(--headingColor);
+    transition: var(--transition);
+}
+
+.mainCharacterstics p{
+    color: var(--contentColor);
+    font-family: var(--contentFontFamily);
+    text-align: center;
+    font-size: 2rem;
+    margin: 0 auto;
+}
+
+.mainCharacterstics h2{
+    color: var(--headingColor);
+    font-family: var(--headingFontFamily);
+    margin: 0 auto;
+}
+
+.mainCharacterstics i{
+    color: var(--supportiveColor);
+}
+
+@media screen and (min-width: 750px ){
+    .mainCharacterstics{
+        width: 50%;
+        float: left;
+    }
+}
+@media screen and (min-width: 1050px ){
+    .mainCharacterstics{
+        width: 25%;
+    }
+}

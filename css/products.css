@@ -1,0 +1,97 @@
+/* ====================== CREDITS ================================== 
+1st figure: 
+    Photo by <a href="https://unsplash.com/@olesichka?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Olesia Buyar</a> on <a href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+
+2nd figure:
+    Photo by <a href="https://unsplash.com/@brookelark?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Brooke Lark</a> on <a href="https://unsplash.com/s/photos/smoothie?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+  
+3rd figure:
+    Photo by <a href="https://unsplash.com/@micheile?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Micheile Henderson</a> on <a href="https://unsplash.com/s/photos/smoothie?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+*/
+
+#productSection{
+    width: 100%;
+    background: var(--primaryColor);
+    overflow: auto;
+}
+
+#productContent{
+    margin: 2rem;
+}
+
+#productFigures{
+    margin: 1rem auto;
+    max-width: 90%;
+    overflow: auto;
+}
+
+#productFigures img{
+    border: none;
+    border-radius: 0px;
+}
+#productFigures figure{
+    margin: 1rem;
+    border: 5px solid var(--supportiveColor);
+    background: var(--supportiveColor);
+    border-radius: 10px;
+    box-shadow: 5px 5px rgba(155, 151, 151, 0.5);
+    display: block;
+    overflow: hidden;
+}
+
+#inventory:hover{
+    background: var(--contentColor);
+    transform: scale(1.02);
+    transition: var(--transition);
+}
+#productFigures figure:hover{
+    box-shadow: 10px 10px rgba(155, 151, 151, 0.75);
+    transition: var(--transition);
+}
+
+@media screen and (min-width: 700px ){
+    #productFigures{
+        margin: 0 auto;
+    }
+    #productContent{
+        max-width: 70%;
+    }
+    #productFigures figure{
+        float: left;
+        width: 45%;
+    }
+    #productFigures img{
+        height: 300px;
+    }
+}
+
+@media screen and (min-width: 950px ){
+    #productContent{
+        max-width: 50%;
+    }
+    #productFigures figure{
+        width: 30%;
+        margin-left: 3%;
+        margin-right: 0;
+    }
+}
+
+@media screen and (min-width: 1150px ){
+    #productContent{
+        float: left;
+        max-width: 25%;
+        min-width: 15%;
+        margin-left: 2%;
+        margin-right: 0;
+    }
+    #productFigures figure{
+        width: 32%;
+        margin-left: 1%;
+        margin-right: 0;
+    }
+    #productFigures{
+        max-width: 70%;
+        margin: 0 auto;
+        padding: 0;
+    }
+}

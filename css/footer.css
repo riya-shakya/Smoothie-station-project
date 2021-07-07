@@ -1,0 +1,17 @@
+#footer{
+    margin: 0;
+    padding: 1rem;
+    text-align: center;
+    background: var(--contentColor);
+}
+#footer i{
+    color: var(--supportiveColor);
+    border-radius: 30%;
+    margin-right: 2%;
+}
+#footer span{
+    color: var(--supportiveColor);
+}
+#footer h2{
+    color: var(--primaryColor);
+}

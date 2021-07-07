@@ -1,0 +1,82 @@
+/* ========================== CREDITS ======================= 
+    1st figure:
+        Photo by <a href="https://unsplash.com/@kellannscott?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">KELLY SCOTT</a> on <a href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+
+    2nd figure:
+        Photo by <a href="https://unsplash.com/@scutariudiana?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Diana Scutariu</a> on <a href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+
+    3rd figure:
+        Photo by <a href="https://unsplash.com/@pichara?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Pichara Bann</a> on <a href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+  */
+
+#exploreSection{
+    margin: 1rem;
+    text-align: center;
+}
+
+#services figure{
+    background: var(--primaryColor);
+    margin: 1rem;
+    border-radius: 10px;
+    border: 5px solid var(--supportiveColor);
+    box-shadow: 5px 5px rgba(155, 151, 151, 0.5)
+}
+
+#services figure img{
+    border: none;
+    border-radius: 0;
+
+}
+
+#services figure figcaption{
+    padding: 1rem;
+    position: relative;
+}
+
+#services figure i{
+    color: var(--contentColor);
+    background: var(--supportiveColor);
+    border: 6px solid var(--primaryColor);
+    padding: 1rem;
+    border-radius: 50%;
+    font-size: 20px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -70%);
+}
+
+#services figure:hover{
+    transform: scale(1.02);
+    box-shadow: 10px 10px rgba(155, 151, 151, 0.75);
+    transition: var(--transition);
+}
+
+#services .readMore{
+    margin: 1rem auto;
+}
+.readMore:hover{
+    background: var(--contentColor);
+    transform: scale(1.02);
+    transition: var(--transition);
+}
+
+@media screen and (min-width: 700px ){
+    #services figure{
+        float:  left;
+        width: 45%;
+        margin-left: 2%;
+    }
+    #services figure img{
+        max-height: 350px;
+    }
+}
+
+@media screen and (min-width: 950px ){
+    #services figure{
+        float: left;
+        width: 30%;
+        margin-left: 2.5%;
+        margin-right: 0;
+        /* margin: 0 auto; */
+    }
+}

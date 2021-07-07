@@ -1,0 +1,103 @@
+/* ========================= CREDITS ============================== 
+    bannerImage : 
+        Photo by <a href="https://unsplash.com/@claudia_soares?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Claudia Soares</a> on <a href="https://unsplash.com/s/photos/smoothie?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+*/
+
+#banner{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient( rgba(0,0,0,0.25), rgba(0,0,0,0.25)),
+            url(../images/bannerImage.jpg);
+    background-size: cover; 
+}
+
+#bannerContent h1{
+    color: var(--primaryColor);
+}
+
+#bannerContent h2{
+    color: var(--contentColor);
+}
+
+#bannerContent{
+    padding: 3rem;
+    position: absolute;
+    left: 40%;
+    top: 40%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+#bannerMessage{
+    animation: animatedMessage 5s ease-in-out 0ms 1; 
+}
+#bannerProduct{
+    animation: animatedProduct 5s ease-in-out 0ms 1; 
+}
+#bannerButton{
+    outline: 2px solid var(--supportiveColor);
+    outline-offset: 3px;
+    margin: 0 auto;
+}
+#bannerButton:hover{
+    background: var(--contentColor);
+    transform: scale(1.02);
+    transition: var(--transition);
+}
+
+@keyframes animatedMessage {
+    0%{
+        transform: translateX(-100%);
+    }
+    50%{
+        transform: translateX(50%);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+
+@keyframes animatedProduct {
+    0%{
+        transform: translateX(100%);
+    }
+    50%{
+        transform: translateX(-50%);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+@media screen and (min-width: 300px ){
+    #banner{
+        background-position: center;
+    }
+}
+@media screen and (min-width: 840px ){
+    #bannerContent h1{
+        font-size: 4rem;
+        max-width: 40rem;
+    }
+    #bannerContent h2{
+        font-size: 3rem;
+        max-width: 40rem;
+    }
+}
+
+@media screen and (min-width: 1200px ){
+    #bannerContent{
+        left: 30%;
+        margin-top: 1rem;
+    }
+    #bannerContent h1{
+        font-size: 5rem;
+        max-width: 50rem;
+    }
+    #banner{
+        background: linear-gradient( to bottom, rgba(0,0,0,0.3), rgba(0,0,0,0.25)),
+            url(../images/bannerImage1200pxEdited.jpg);
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center;
+    }
+
+}
